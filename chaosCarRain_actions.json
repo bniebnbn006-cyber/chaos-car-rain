@@ -1,0 +1,29 @@
+{
+    "chaosCarRain_trigger": {
+        "title": "Chaos Car Rain: Drop a Car!",
+        "desc": "Drops a random vehicle out of the sky near you",
+        "cat": "menuExtra",
+        "order": 900,
+        "ctx": "tlua",
+        "isBasic": true,
+        "onDown": "if not extensions.isExtensionLoaded('chaosCarRain') then extensions.load('chaosCarRain') end extensions.chaosCarRain.trigger()"
+    },
+    "chaosCarRain_increaseCooldown": {
+        "title": "Chaos Car Rain: Increase Cooldown",
+        "desc": "Raises the Chaos Car Rain cooldown by one step (default 1s)",
+        "cat": "menuExtra",
+        "order": 901,
+        "ctx": "tlua",
+        "isBasic": true,
+        "onDown": "if not extensions.isExtensionLoaded('chaosCarRain') then extensions.load('chaosCarRain') end extensions.chaosCarRain.increaseCooldown()"
+    },
+    "chaosCarRain_decreaseCooldown": {
+        "title": "Chaos Car Rain: Decrease Cooldown",
+        "desc": "Lowers the Chaos Car Rain cooldown by one step (default 1s)",
+        "cat": "menuExtra",
+        "order": 902,
+        "ctx": "tlua",
+        "isBasic": true,
+        "onDown": "if not extensions.isExtensionLoaded('chaosCarRain') then extensions.load('chaosCarRain') end extensions.chaosCarRain.decreaseCooldown()"
+    }
+}
